@@ -1,4 +1,7 @@
+@import '../variables';
+@import '../mixins';
+
 .container {
   margin: 0 auto;
-  max-width: 600px;
+  max-width: calcRem(600px);
 }

@@ -1,3 +1,9 @@
 export default function Container({ children }) {
-  return <div className="container">{children}</div>;
+  return (
+  <div className="container">
+    <div className="container-inner">
+      {children}
+    </div>
+  </div>
+  );
 }

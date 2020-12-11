@@ -19,8 +19,8 @@ export default function About({ indexPage }) {
         <Head>
           <title>The Love Handles | Live rock from Austin, Texas</title>
         </Head>
+        <Intro />
         <Container>
-          <Intro />
           <h2>{homePage.title}</h2>
           <PostBody content={homePage.content} />
         </Container>
