@@ -1,0 +1,19 @@
+@import '../styles/variables.scss';
+@import '../styles/mixins.scss';
+
+.intro {
+  padding: calcRem(16px);
+  text-align: center;
+}
+
+.logo {
+  margin: 0 0 calcRem(16px);
+  max-width: 75%;
+}
+
+@include breakpoint() {
+  .logo {
+    margin: 0 auto;
+    max-width: calcRem(450px);
+  }
+}

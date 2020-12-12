@@ -7,7 +7,7 @@ import Container from "../components/container";
 import Intro from "../components/intro";
 import Layout from "../components/layout";
 
-export default function About({ indexPage }) {
+export default function About({ indexPage, settingsData }) {
   const findHomePage = indexPage.edges.filter(
     (edge) => edge.node.isFrontPage === true
   );
@@ -21,7 +21,7 @@ export default function About({ indexPage }) {
         </Head>
         <Intro />
         <Container>
-          <h2>{homePage.title}</h2>
+          <h1>{homePage.title}</h1>
           <PostBody content={homePage.content} />
         </Container>
       </Layout>
@@ -31,7 +31,10 @@ export default function About({ indexPage }) {
 
 export async function getStaticProps() {
   const indexPage = await getIndexPage();
+
   return {
-    props: { indexPage },
+    props: {
+      indexPage
+    },
   };
 }

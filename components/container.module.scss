@@ -1,0 +1,7 @@
+@import '../styles/variables.scss';
+@import '../styles/mixins.scss';
+
+.container {
+  margin: 0 auto;
+  max-width: calcRem(600px);
+}

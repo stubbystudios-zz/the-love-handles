@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap');
+@import 'reset.scss';
+@import 'variables.scss';
+@import 'mixins.scss';
+
+body {
+  font-family: 'Oswald', helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+a,
+a:visited,
+a:active {
+  color: $link;
+  text-decoration: none;
+
+  &:hover {
+    color: $link-hover;
+  }
+}

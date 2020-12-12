@@ -1,9 +1,11 @@
+import styles from './container.module.scss';
+
 export default function Container({ children }) {
   return (
-  <div className="container">
-    <div className="container-inner">
-      {children}
+    <div className={styles.container}>
+      <div className={styles.container_inner}>
+        {children}
+      </div>
     </div>
-  </div>
   );
 }
