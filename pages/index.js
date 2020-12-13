@@ -7,11 +7,12 @@ import Container from "../components/container";
 import Intro from "../components/intro";
 import Layout from "../components/layout";
 
-export default function About({ indexPage, settingsData }) {
+export default function About({ indexPage }) {
   const findHomePage = indexPage.edges.filter(
     (edge) => edge.node.isFrontPage === true
   );
   const homePage = findHomePage[0].node;
+  console.log("DESCRIPTION", indexPage);
 
   return (
     <>
