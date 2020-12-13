@@ -12,6 +12,7 @@ export default function About({ indexPage }) {
     (edge) => edge.node.isFrontPage === true
   );
   const homePage = findHomePage[0].node;
+
   console.log("DESCRIPTION", indexPage);
 
   return (
