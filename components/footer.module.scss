@@ -1,0 +1,21 @@
+@import "../styles/variables.scss";
+@import "../styles/mixins.scss";
+
+.global_footer {
+  background: $black-800;
+  background-image: linear-gradient(
+    180deg, 
+    rgba(0, 0, 0, 0.3) 0%, 
+    transparent 15%,
+    transparent 100%);
+  margin-top: calcRem(32px);
+  padding: calcRem(32px) 0 calcRem(64px);
+  text-align: center;
+  text-transform: capitalize;
+  
+  @include font-size(14px, 200);
+
+  a {
+    color: $white;
+  }
+}

@@ -1,0 +1,6 @@
+@import '../styles/variables.scss';
+@import '../styles/mixins.scss';
+
+.post_body {
+  padding: 0 calcRem(24px);
+}

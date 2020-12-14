@@ -1,10 +1,10 @@
-@import '../styles/variables.scss';
-@import '../styles/mixins.scss';
+@import "../styles/variables.scss";
+@import "../styles/mixins.scss";
 
-.intro {
+.global_header {
   background: url("../public/images/header-bg.png") 0 bottom repeat-x $white;
   color: $black-900;
-  min-height: calcRem(250px);
+  min-height: calcRem(225px);
   padding: calcRem(24px);
   text-align: center;
 }
@@ -22,6 +22,10 @@
 }
 
 @include breakpoint() {
+  .global_header {
+    min-height: calcRem(250px);
+  }
+
   .logo {
     margin: 0 auto;
     max-width: calcRem(350px);

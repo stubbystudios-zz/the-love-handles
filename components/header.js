@@ -1,12 +1,21 @@
 import Link from "next/link";
 
+import styles from "./header.module.scss";
+
 export default function Header() {
   return (
-    <h2 className="component-header">
-      <Link href="/">
-        <a className="hover:underline">Blog</a>
-      </Link>
-      .
-    </h2>
+    <header className={styles.global_header}>
+      <figure className={styles.logo}>
+        <img src="../../images/TLH_med_logo.png" />
+      </figure>
+      <nav className={styles.nav}>
+        <Link href="/">
+          <a>Home</a>
+        </Link>
+        <Link href="/contact-us">
+          <a>Contact Us</a>
+        </Link>
+      </nav>
+    </header>
   );
 }

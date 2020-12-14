@@ -5,10 +5,11 @@
   @return #{$rem-size}rem;
 }
 
-@mixin font-size($size) {
+@mixin font-size($size: 16px, $weight: 400) {
   font-size: $size;
   font-size: calcRem($size);
   line-height: 1.4;
+  font-weight: $weight;
 }
 
 @mixin icon($size, $cursor: pointer) {

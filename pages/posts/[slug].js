@@ -12,7 +12,7 @@ import SectionSeparator from "../../components/section-separator";
 import Layout from "../../components/layout";
 import PostTitle from "../../components/post-title";
 import Tags from "../../components/tags";
-import Intro from "../../components/intro";
+import Header from "../../components/header";
 
 export default function Post({ post, posts, preview }) {
   const router = useRouter();
@@ -25,36 +25,36 @@ export default function Post({ post, posts, preview }) {
   return (
     <Layout preview={preview}>
       <Container>
-        <Intro />
+        <Header />
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (
-          <>
-            <article>
-              <Head>
-                <title>{post.title}</title>
-                <meta
-                  property="og:image"
-                  content={post.featuredImage?.node?.sourceUrl}
+            <>
+              <article>
+                <Head>
+                  <title>{post.title}</title>
+                  <meta
+                    property="og:image"
+                    content={post.featuredImage?.node?.sourceUrl}
+                  />
+                </Head>
+                <PostHeader
+                  title={post.title}
+                  coverImage={post.featuredImage?.node}
+                  date={post.date}
+                  author={post.author?.node}
+                  categories={post.categories}
                 />
-              </Head>
-              <PostHeader
-                title={post.title}
-                coverImage={post.featuredImage?.node}
-                date={post.date}
-                author={post.author?.node}
-                categories={post.categories}
-              />
-              <PostBody content={post.content} />
-              <footer>
-                {post.tags.edges.length > 0 && <Tags tags={post.tags} />}
-              </footer>
-            </article>
+                <PostBody content={post.content} />
+                <footer>
+                  {post.tags.edges.length > 0 && <Tags tags={post.tags} />}
+                </footer>
+              </article>
 
-            <SectionSeparator />
-            {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-          </>
-        )}
+              <SectionSeparator />
+              {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+            </>
+          )}
       </Container>
     </Layout>
   );

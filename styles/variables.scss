@@ -1,18 +1,22 @@
 $black: #000;
-$black-900: #2d2d2d;
-$black-800: #323232;
-$black-700: #5a5a5a;
-$black-600: #7f7a7b;
-$black-500: #ccc;
-$black-400: #dadada;
-$black-300: #e0e5e0;
-$black-200: #eee;
-$black-100: #f0f0f0;
+$black-900: #0c0307;
+$black-800: #201b1e;
+$black-700: #393336;
+$black-600: #565154;
+$black-500: #797376;
+$black-400: #aea8ab;
+$black-300: #cfc8cc;
+$black-200: #eee7eb;
+$black-100: #fef6fa;
+$white: #fff;
 
-$brand-a: $black-900;
+$brand-a: #a23239;
+$brand-b: #ff2533;
+$brand-c: #542024;
+$brand-d: #290f46;
 
 $link: #39f;
-$link-hover: #f39;
+$link-hover: $brand-b;
 
 // Media breakpoints
 $sm: 576px;

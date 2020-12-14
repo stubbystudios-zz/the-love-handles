@@ -18,18 +18,18 @@ export default function Page({ page }) {
 
   return (
     <Layout>
+      <Header />
       <Container>
-        <Header />
         {router.isFallback ? (
           <p>Loading...</p>
         ) : (
-          <>
-            <article>
-              <h1>{page.title}</h1>
-              <PostBody content={page.content} />
-            </article>
-          </>
-        )}
+            <>
+              <article>
+                <h1>{page.title}</h1>
+                <PostBody content={page.content} />
+              </article>
+            </>
+          )}
       </Container>
     </Layout>
   );

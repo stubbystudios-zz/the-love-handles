@@ -4,16 +4,23 @@
 @import 'mixins.scss';
 
 body {
+  background: 0 0 $black-900;
+  background-image: url("../public/images/love-handles-bg.png");
+  color: $white;
   font-family: 'Oswald', helvetica, sans-serif;
+  text-transform: uppercase;
+
+  @include font-size(16px);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-transform: uppercase;
+.main-container {
+  background: linear-gradient(
+    180deg, 
+    $black-900 0%, 
+    $black-900 10%, 
+    transparent 20%,
+    transparent 100%);
+  padding: calcRem(32px) 0 0;
 }
 
 a,
