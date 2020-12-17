@@ -1,0 +1,25 @@
+$black: #000 !default;
+$black-900: #0c0307 !default;
+$black-800: #201b1e !default;
+$black-700: #393336 !default;
+$black-600: #565154 !default;
+$black-500: #797376 !default;
+$black-400: #aea8ab !default;
+$black-300: #cfc8cc !default;
+$black-200: #eee7eb !default;
+$black-100: #fef6fa !default;
+$white: #fff !default;
+
+$brand-a: #a23239 !default;
+$brand-b: #ff2533 !default;
+$brand-c: #542024 !default;
+$brand-d: #290f46 !default;
+
+$link: #39f !default;
+$link-hover: $brand-b !default;
+
+// Media breakpoints
+$sm: 576px !default;
+$md: 768px !default;
+$lg: 992px !default;
+$xl: 1200px !default;

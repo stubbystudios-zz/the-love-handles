@@ -1,7 +1,13 @@
-@import '../styles/variables.scss';
-@import '../styles/mixins.scss';
+@import '../styles/base/variables.scss';
+@import '../styles/base/mixins.scss';
 
 .container {
-  margin: 0 auto;
+  margin: 0 calcRem(24px);
   max-width: calcRem(600px);
+}
+
+@include breakpoint($md) {
+  .container{
+    margin: 0 auto;
+  }
 }

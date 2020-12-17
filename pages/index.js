@@ -4,11 +4,11 @@ import { getIndexPage } from "../lib/api";
 
 import PostBody from "../components/post-body";
 import Container from "../components/container";
-import Header from "../components/header";
 import Layout from "../components/layout";
+import Header from "../components/header";
 
-export default function About({ indexPage, settingsData }) {
-  const findHomePage = indexPage.edges.filter(
+export default function About({ indexPage }) {
+  const findHomePage = indexPage.pages.edges.filter(
     (edge) => edge.node.isFrontPage === true
   );
   const homePage = findHomePage[0].node;
@@ -20,8 +20,9 @@ export default function About({ indexPage, settingsData }) {
           <title>The Love Handles | Live rock from Austin, Texas</title>
         </Head>
         <Header />
-        <div className="main-container">
-          <Container className="main-container">
+        <div className="main_container">
+          <Container>
+            <h1>{homePage.title}</h1>
             <PostBody content={homePage.content} />
           </Container>
         </div>

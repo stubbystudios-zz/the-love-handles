@@ -1,29 +1,28 @@
-@import "../styles/variables.scss";
-@import "../styles/mixins.scss";
+@import '../styles/base/variables';
+@import '../styles/base/mixins';
 
 .global_header {
   background: url("../public/images/header-bg.png") 0 bottom repeat-x $white;
   color: $black-900;
-  min-height: calcRem(225px);
   padding: calcRem(24px);
   text-align: center;
 }
 
 .logo {
-  margin: 0 0 calcRem(16px);
+  margin: 0 auto;
   max-width: 75%;
 }
 
 .nav {
   justify-content: space-evenly;
   display: flex;
-  margin: calcRem(24px) auto;
+  margin: calcRem(24px) auto calcRem(40px);
   width: calcRem(300px);
 }
 
 @include breakpoint() {
   .global_header {
-    min-height: calcRem(250px);
+    text-align: center;
   }
 
   .logo {

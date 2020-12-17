@@ -1,5 +1,5 @@
-@import '../styles/variables.scss';
-@import '../styles/mixins.scss';
+@import '../styles/base/variables.scss';
+@import '../styles/base/mixins.scss';
 
 .intro {
   background: url("../public/images/header-bg.png") 0 bottom repeat-x $white;

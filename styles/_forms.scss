@@ -1,0 +1,20 @@
+.wpforms-field {
+  label {
+    display: block;
+    color: $white;
+  }
+
+  input {
+    height: calcRem(32px);
+  }
+
+  textarea {
+    height: calcRem(100px);
+  }
+
+  input,
+  textarea {
+    width: 80%;
+    margin-bottom: calcRem(24px);
+  }
+}

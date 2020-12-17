@@ -8,6 +8,7 @@ export default function Header() {
       <figure className={styles.logo}>
         <img src="../../images/TLH_med_logo.png" />
       </figure>
+      <p>Rock n roll from Austin, Texas</p>
       <nav className={styles.nav}>
         <Link href="/">
           <a>Home</a>
